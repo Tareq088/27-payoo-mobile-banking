@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+                        <!-- tailwindcss +daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-lg min-h-screen bg-gray-100 mx-auto py-6">
+        <header class="mx-5">
+            <nav class="flex justify-between items-center mb-1">
+                <div class="flex gap-4">
+                    <img class="w-12" src="assets/Group.png" alt="">
+                    <div>
+                        <h1 id="balance" class="text-xl font-bold">$4500</h1>
+                        <p>Available Balance</p>
+                    </div>
+                </div>
+                <button class="btn">Log Out</button>
+            </nav>
+            <hr class="h-[2px] text-gray-400">
+            <section>
+                <h1 class="text-2xl font-bold mt-3">Welcome to payoo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quam.</p>
+                <div class="cards grid grid-cols-3 gap-3">
+                    <div id="add-money-btn" class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/wallet1.png" alt="">
+                        <p>Add Money</p>
+                    </div>
+                    <div id="cash-out-btn" class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/send1.png" alt="">
+                        <p>Cashout</p>
+                    </div>
+                    <div class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/money1.png" alt="">
+                        <p>Transfer Money</p>
+                    </div>
+                    <div class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/bonus1.png" alt="">
+                        <p>Get Bonus</p>
+                    </div>
+                    <div class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/purse1.png" alt="">
+                        <p>Pay Bill</p>
+                    </div>
+                    <div class="box text-center border rounded-md p-4 shadow-md cursor-pointer border-zinc-300">
+                        <img class="mx-auto" src="assets/transaction1.png" alt="">
+                        <p>Transaction</p>
+                    </div>
+                </div>
+                <section id="add-money" class="mt-4">
+                    <h1 class="text-2xl font-bold mb-3">Add Money</h1>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                          <div class="card w-full shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset space-y-2">
+                                    <legend class="font-bold text-base">Select Bank
+                                    </legend>
+                                    <select class="select">
+                                      <option disabled selected>Pick a bank</option>                                <option value="Bkash">Bkash</option>
+                                      <option value="Nagad">Nagad</option>
+                                      <option value="dbbl">DBBL</option>
+                                    </select>
+                                    <label class="fieldset-label font-bold text-lg">Account Number
+                                    </label>
+                                    <input type="number" value="12345" id="Account-number" class="input" placeholder="Entre Your number" required>
+                                    <label class="fieldset-label font-bold text-lg">Enter Amout
+                                    </label>
+                                    <input id="enterAmount" type="number" class="input" placeholder="Entre Amount" required>
+                                    <label class="fieldset-label font-bold text-lg">4 Digit Pin
+                                    </label>
+                                    <input id="pin" value="1234" type="text" class="input" placeholder="Enter 4 Digit Pin" required>
+                                    <button id="Add-btn" class="btn btn-neutral mt-4 text-lg  bg-blue-900 border-none">Add Money
+                                    </button>
+                                </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="cash-out">
+                    <h1 class="text-2xl font-bold mb-3">Cashout</h1>
+                    <fieldset class="fieldset space-y-2">
+                        <label class="fieldset-label font-bold text-lg">Account Number
+                        </label>
+                        <input type="number" value="12345" id="Account-number-out" class="input" placeholder="Entre Your number" required>
+                        <label class="fieldset-label font-bold text-lg">Enter Amout
+                        </label>
+                        <input id="enterAmount-out" type="number" class="input" placeholder="Entre Amount" required>
+                        <label class="fieldset-label font-bold text-lg">4 Digit Pin
+                        </label>
+                        <input id="pin-out" value="1234" type="text" class="input" placeholder="Enter 4 Digit Pin" required>
+                        <button id="with-draw-btn" class="btn btn-neutral mt-4 text-lg  bg-blue-900 border-none">WithDraw Money
+                        </button>
+                    </fieldset>
+                </section>
+            </section>
+        </header>
+    </section>
+    <script src="script/addMoney.js"></script>
+    <script src="script/toggle.js"></script>
+    <script src="script/cahsout.js"></script>
+
+</body>
+</html>

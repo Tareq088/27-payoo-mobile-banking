@@ -9,31 +9,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen bg-gray-100 mx-auto">
+    <section class="max-w-md min-h-screen bg-gray-100 mx-auto py-6">
                         <!-- nav section -->
         <div class="flex justify-center items-center relative mb-10">
             <img class="absolute top-20 w-48" src="assets/bg.png" alt="">
-            <img class="pt-25 w-12" src="assets/Group.png" alt="">
+            <img class="pt-32 w-12" src="assets/Group.png" alt="">
         </div>
         <!-- login section -->
-        <div class="hero bg-base-200">
+        <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
-                  <fieldset class="fieldset">
-                    <label class="fieldset-label">Mobile Number</label>
-                    <input type="number" class="input" placeholder="Entre Your number" />
-                    <label class="fieldset-label">4 Digit Pin</label>
-                    <input type="text" class="input" placeholder="Enter 4 Digit Pin" />
-                    <button class="btn btn-neutral mt-4">Login</button>
+                <form class="card-body">
+                  <fieldset class="fieldset space-y-2">
+                    <label class="fieldset-label font-bold text-lg">Account Number</label>
+                    <input type="number" value="12345" id="Account-number" class="input" placeholder="Entre Your number" required/>
+                    <label class="fieldset-label font-bold text-lg">4 Digit Pin</label>
+                    <input id="pin" value="1234" type="text" class="input" placeholder="Enter 4 Digit Pin" required/>
+                    <button id="Login-btn" class="btn btn-neutral mt-4 text-lg">Login</button>
                   </fieldset>
-                </div>
+                </form>
               </div>
             </div>
           </div>
-
-
     </section>
+    <script src="script/index.js">
+
+    </script>
     
 </body>
 </html>
